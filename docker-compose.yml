@@ -1,0 +1,13 @@
+version: '3'
+services:
+  analyze:
+    image: codeclimate/codeclimate
+    command: ["analyze", "./"]
+    tty: true
+    environment:
+      CODECLIMATE_CODE: "$PWD"
+    volumes:
+      - ./:/code
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /tmp/cc:/tmp/cc
+
