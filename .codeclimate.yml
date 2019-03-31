@@ -1,0 +1,13 @@
+---
+version: "2"
+checks:
+  method-complexity:
+    enabled: true
+    config:
+      threshold: -1
+plugins:
+  structure:
+    enabled: true
+  duplication:
+    enabled: false
+
