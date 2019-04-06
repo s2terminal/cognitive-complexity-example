@@ -10,4 +10,9 @@ plugins:
     enabled: true
   duplication:
     enabled: false
-
+  eslint:
+    enabled: false # set true to check Cyclomatic Complexity
+    config:
+      config: .eslintrc.js
+      extensions:
+      - .js
