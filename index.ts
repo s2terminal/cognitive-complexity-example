@@ -51,7 +51,7 @@ function method6(n: number) {
 
 
 // Cognitive Complexity: 1
-function method7(a: boolean, b: boolean) {
+function method7(a: boolean, b: boolean, c: boolean, d: boolean) {
   return a && b && c && d;
 }
 
@@ -66,7 +66,7 @@ function method9(a: boolean, b: boolean, c: boolean, d: boolean) {
 }
 
 
-// Cognitive Complexity: 0
+// Cognitive Complexity: 1
 function method10(a: boolean, b: boolean, c: boolean, d: boolean) {
   return a || b || c || d;
 }
