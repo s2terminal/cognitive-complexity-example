@@ -1,0 +1,6 @@
+services:
+  qlty:
+    image: ghcr.io/qltysh/qlty
+    command: ["metrics", "--all", "--functions"]
+    volumes:
+      - ./:/app
