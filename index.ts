@@ -2,6 +2,10 @@
 function method1() {
 }
 
+// --------------------------------
+// フローが中断されると複雑度が上がる
+// --------------------------------
+
 // Cognitive Complexity: 1
 function method2() {
   try {
@@ -49,27 +53,9 @@ function method6(n: number) {
   }
 }
 
-
-// Cognitive Complexity: 1
-function method7(a: boolean, b: boolean, c: boolean, d: boolean) {
-  return a && b && c && d;
-}
-
-// Cognitive Complexity: 3
-function method8(a: boolean, b: boolean, c: boolean, d: boolean) {
-  return a && b || c && d;
-}
-
-// Cognitive Complexity: 3
-function method9(a: boolean, b: boolean, c: boolean, d: boolean) {
-  return a || b && c || d;
-}
-
-
-// Cognitive Complexity: 1
-function method10(a: boolean, b: boolean, c: boolean, d: boolean) {
-  return a || b || c || d;
-}
+// --------------------------------
+// ネストされるほど複雑度が上がる
+// --------------------------------
 
 // Cognitive Complexity: 3
 function method11() {
@@ -138,4 +124,45 @@ function method17() {
       }
     }
   }
+}
+
+
+// Cognitive Complexity: 1
+function method21(a: boolean, b: boolean, c: boolean, d: boolean) {
+  return a && b && c && d;
+}
+
+// Cognitive Complexity: 2
+function method22(a: boolean, b: boolean, c: boolean, d: boolean) {
+  return a || b && c && d;
+}
+
+// Cognitive Complexity: 3
+function method23(a: boolean, b: boolean, c: boolean, d: boolean) {
+  return a && b || c && d;
+}
+
+// Cognitive Complexity: 2
+function method24(a: boolean, b: boolean, c: boolean, d: boolean) {
+  return a || b || c && d;
+}
+
+// Cognitive Complexity: 2
+function method25(a: boolean, b: boolean, c: boolean, d: boolean) {
+  return a && b && c || d;
+}
+
+// Cognitive Complexity: 3
+function method26(a: boolean, b: boolean, c: boolean, d: boolean) {
+  return a || b && c || d;
+}
+
+// Cognitive Complexity: 2
+function method27(a: boolean, b: boolean, c: boolean, d: boolean) {
+  return a && b || c || d;
+}
+
+// Cognitive Complexity: 1
+function method28(a: boolean, b: boolean, c: boolean, d: boolean) {
+  return a || b || c || d;
 }
